@@ -10,7 +10,6 @@ modules:
           - name: sap.ui.demo.tiles-app-front
             parameters:
                 content-target: true
-          - name: sap.ui.demo.tiles-uaa
       parameters:
           config:
               destinations:
@@ -34,13 +33,6 @@ modules:
               - npm run build:cf
           supported-platforms: []
 resources:
-    - name: sap.ui.demo.tiles-uaa
-      type: org.cloudfoundry.managed-service
-      parameters:
-          path: ./xs-security.json
-          service: xsuaa
-          service-name: sap.ui.demo.tiles-xsuaa-service
-          service-plan: application
     - name: sap.ui.demo.tiles-app-front
       type: org.cloudfoundry.managed-service
       parameters:

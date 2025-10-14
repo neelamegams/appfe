@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageToast"],function(e,s){"use strict";var r=e.extend("sap.ui.demo.tiles.controller.App",{press:function(e){s.show("The GenericTile is pressed.")}});return r});
+//# sourceMappingURL=App.controller.js.map

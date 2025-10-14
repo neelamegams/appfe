@@ -1,0 +1,25 @@
+<mvc:View controllerName="sap.ui.demo.tiles.controller.App"
+    xmlns:f="sap.f" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc">
+    <f:ShellBar
+		title="Expense Manager"
+		homeIcon="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_sap.png"
+		showCopilot="true"
+		showSearch="true"
+		showNotifications="true"
+		notificationsNumber="2">
+		<f:profile>
+			<m:Avatar initials="UI"/>
+		</f:profile>
+    </f:ShellBar>
+    <m:GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Cumulative Totals" subheader="Expenses" press="press">
+        <m:TileContent unit="USD" >
+            <m:NumericContent value="1762" icon="sap-icon://line-charts" withMargin="false" />
+        </m:TileContent>
+    </m:GenericTile>
+
+    <m:GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Total Per Day" subheader="Expenses" press="press">
+        <m:TileContent unit="USD">
+            <m:NumericContent value="112" withMargin="false" />
+        </m:TileContent>
+    </m:GenericTile>
+</mvc:View>

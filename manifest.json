@@ -1,8 +1,0 @@
-{
-    "sap.app": {
-        "id": "appfe",
-        "applicationVersion": {
-            "version": "1.0.5"
-        }
-    }
-}
